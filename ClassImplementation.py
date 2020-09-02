@@ -9,7 +9,7 @@ class Employee :
     self.pay = pay
   #defining a function to show the values on calling
   def show( self ) :
-      return 'My name is {}, age {} amd pay {}'.format(self.name ,self.age ,self.pay)
+      return '{} {} {}'.format(self.name ,self.age ,self.pay)
 #making an object for the class employee
 
 obj1 = Employee("Shivam",20,200000)
@@ -19,4 +19,5 @@ print(obj1.show())
 
 #we can also call the function with the class name
 #but we've to provide object explicitly for the reference of self
-#Employee.show( obj1 )
+
+print(Employee.show( obj1 ))
